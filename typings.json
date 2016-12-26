@@ -8,12 +8,8 @@
     "winston": "registry:dt/winston#0.0.0+20161122193333",
     "yargs": "registry:npm/yargs#5.0.0+20160907000723"
   },
-  "globalDependencies": {
-    "node": "registry:dt/node#6.0.0+20161220160159"
-  },
   "devDependencies": {
-    "chai": "registry:npm/chai#3.5.0+20160723033700",
-    "sinon": "registry:npm/sinon#1.16.0+20160723033700"
+    "chai": "registry:npm/chai#3.5.0+20160723033700"
   },
   "globalDevDependencies": {
     "mocha": "registry:env/mocha#2.2.5+20160926180742"

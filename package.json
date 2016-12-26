@@ -2,7 +2,7 @@
   "name": "tweet-fetch",
   "version": "1.0.0",
   "description": "Fetches account Tweets for further processing",
-  "main": "dist/index.js",
+  "main": "dist/lib/index.js",
   "dependencies": {
     "amqplib": "^0.5.1",
     "dotenv": "^2.0.0",
@@ -17,19 +17,19 @@
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
     "npm-run-all": "^3.1.2",
-    "sinon": "^1.17.6",
     "tslint": "^4.2.0",
+    "typemoq": "^1.0.3",
     "typescript": "^2.1.4",
     "typings": "^2.1.0"
   },
   "scripts": {
     "prestart": "npm run build",
-    "start": "node dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/lib/index.js",
+    "test": "mocha -c dist/test/**/*.test.js",
     "build": "tsc"
   },
   "bin": {
-    "tweet-fetch": "dist/index.js"
+    "tweet-fetch": "dist/lib/index.js"
   },
   "repository": {
     "type": "git",

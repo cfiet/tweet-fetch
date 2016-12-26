@@ -1,4 +1,4 @@
-declare module 'twitter' {
+declare module 'twitter/interfaces' {
   interface TwitterApiSettings {
     consumer_key: string;
 	  consumer_secret: string;
@@ -14,9 +14,13 @@ declare module 'twitter' {
     );
   }
 
-  interface TwitterClientFactory {
+  interface TwitterClientFactory extends TwitterClient {
     new (settings?: TwitterApiSettings): TwitterClient
   }
+}
+
+declare module 'twitter' {
+  import { TwitterClientFactory } from 'twitter/interfaces';
 
   const Twitter: TwitterClientFactory;
   export = Twitter;
