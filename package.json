@@ -1,0 +1,44 @@
+{
+  "name": "tweet-fetch",
+  "version": "1.0.0",
+  "description": "Fetches account Tweets for further processing",
+  "main": "dist/index.js",
+  "dependencies": {
+    "amqplib": "^0.5.1",
+    "dotenv": "^2.0.0",
+    "lodash": "^4.17.3",
+    "rxjs": "^5.0.2",
+    "twitter": "^1.7.0",
+    "when": "^3.7.7",
+    "winston": "^2.3.0",
+    "yargs": "^6.5.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "npm-run-all": "^3.1.2",
+    "sinon": "^1.17.6",
+    "tslint": "^4.2.0",
+    "typescript": "^2.1.4",
+    "typings": "^2.1.0"
+  },
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "bin": {
+    "tweet-fetch": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cfiet/tweet-fetch.git"
+  },
+  "author": "Maciej Makowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cfiet/tweet-fetch/issues"
+  },
+  "homepage": "https://github.com/cfiet/tweet-fetch#readme"
+}
