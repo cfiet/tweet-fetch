@@ -29,9 +29,6 @@
     "start-dev": "npm run build && npm start",
     "test": "mocha -c dist/test/**/*.test.js"
   },
-  "bin": {
-    "tweet-fetch": "dist/lib/index.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cfiet/tweet-fetch.git"
