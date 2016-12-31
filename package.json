@@ -23,10 +23,11 @@
     "typings": "^2.1.0"
   },
   "scripts": {
-    "prestart": "npm run build",
+    "postinstall": "npm run build",
+    "build": "tsc",
     "start": "node dist/lib/index.js",
-    "test": "mocha -c dist/test/**/*.test.js",
-    "build": "tsc"
+    "start-dev": "npm run build && npm start",
+    "test": "mocha -c dist/test/**/*.test.js"
   },
   "bin": {
     "tweet-fetch": "dist/lib/index.js"
