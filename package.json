@@ -23,7 +23,7 @@
     "typings": "^2.1.0"
   },
   "scripts": {
-    "postinstall": "typings install && npm run build",
+    "prepublish": "typings install && npm run build",
     "build": "tsc",
     "start": "node dist/lib/index.js",
     "start-dev": "npm run build && npm start",
