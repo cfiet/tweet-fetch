@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Fetches account Tweets for further processing",
   "main": "./dist/lib/index.js",
-  "bin": "./dist/lib",
+  "bin": "./dist/lib/index.js",
   "dependencies": {
     "amqplib": "^0.5.1",
     "dotenv": "^2.0.0",
