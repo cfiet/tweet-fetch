@@ -2,7 +2,8 @@
   "name": "tweet-fetch",
   "version": "1.0.0",
   "description": "Fetches account Tweets for further processing",
-  "main": "dist/lib/index.js",
+  "main": "./dist/lib/index.js",
+  "bin": "./dist/lib",
   "dependencies": {
     "amqplib": "^0.5.1",
     "dotenv": "^2.0.0",
@@ -23,8 +24,8 @@
     "typings": "^2.1.0"
   },
   "scripts": {
-    "prepublish": "typings install && npm run build",
     "build": "tsc",
+    "prepublish": "typings install && npm run build",
     "start": "node dist/lib/index.js",
     "start-dev": "npm run build && npm start",
     "test": "mocha -c dist/test/**/*.test.js"
